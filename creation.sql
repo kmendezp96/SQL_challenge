@@ -14,17 +14,17 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 -- -----------------------------------------------------
 -- Schema mydb
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `challenge` DEFAULT CHARACTER SET utf8 ;
+USE `challenge` ;
 
 -- -----------------------------------------------------
 -- Table `mydb`.`challenge`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`challenge` ;
+DROP TABLE IF EXISTS `challenge`.`challenge` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`challenge` (
+CREATE TABLE IF NOT EXISTS `challenge`.`challenge` (
   `seq` INT NOT NULL AUTO_INCREMENT,
-  `yn` VARCHAR(1) NULL,
+  `yn` ENUM('y', 'n') NULL,
   `age` TINYINT(2) NULL,
   `birthday` DATE NULL,
   `bool` TINYINT NULL,
