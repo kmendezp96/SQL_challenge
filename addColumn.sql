@@ -1,0 +1,1 @@
+ALTER TABLE challenge.challenge ADD trgr bigint;
