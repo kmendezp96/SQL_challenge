@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `challenge`.`challenge` (
   `city` VARCHAR(45) NULL,
   `ccnumber` BIGINT(18) NULL,
   `date` VARCHAR(11) NULL,
-  `digit` BIGINT(30) NULL,
+  `digit`  VARCHAR(45) NULL,
   `dollar` VARCHAR(20) NULL,
   `first` VARCHAR(20) NULL,
   `chifre` BIGINT(12) NULL,
