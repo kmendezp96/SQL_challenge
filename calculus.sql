@@ -6,7 +6,10 @@ CREATE PROCEDURE `calculus`()
 begin 
 
 declare total_rows int default 0;
-set total_rows = count(*)/2;
+set total_rows = (select count(*) from challenge)/2;
+
+
+
 
 select ccnumber, name from challenge where ccnumber = ( select min(ccnumber) from challenge);
 select ccnumber, name from challenge where ccnumber = ( select max(ccnumber) from challenge);
