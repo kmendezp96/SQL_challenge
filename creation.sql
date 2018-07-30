@@ -34,13 +34,12 @@ CREATE TABLE IF NOT EXISTS `challenge`.`challenge` (
   `digit`  VARCHAR(45) NULL,
   `dollar` VARCHAR(20) NULL,
   `first` VARCHAR(20) NULL,
-  `chifre` BIGINT(12) NULL,
+  `chifre` BIGINT(20) NULL,
   `name` VARCHAR(60) NULL,
   `last` VARCHAR(45) NULL,
   `paragraph` LONGTEXT NULL,
   `sentence`LONGTEXT NULL,
-  PRIMARY KEY (`seq`),
-  UNIQUE INDEX `seq_UNIQUE` (`seq` ASC))
+  PRIMARY KEY (`seq`))
 ENGINE = InnoDB;
 
 

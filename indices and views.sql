@@ -3,10 +3,10 @@
 -- DROP INDEX indice_name on challenge;
 -- DROP INDEX indice_ages on challenge;
 
- CREATE UNIQUE INDEX indice_seq using BTree on challenge(seq);
  CREATE INDEX indice_last using BTree on challenge(last);
  CREATE INDEX indice_name using BTree on challenge(name);
  CREATE INDEX indice_ages using HASH on challenge(age);
+ CREATE INDEX index_ccnumber using BTree on challenge(ccnumber);
  
 DROP VIEW if exists seq_trgr;
 DROP VIEW if exists seq_name;
