@@ -1,3 +1,4 @@
+USE challenge;
 drop trigger if exists trigger_challenge;
 DELIMITER $$
 CREATE TRIGGER trigger_challenge BEFORE UPDATE ON challenge
