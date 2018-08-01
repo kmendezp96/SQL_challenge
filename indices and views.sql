@@ -6,7 +6,8 @@
  CREATE INDEX indice_last using BTree on challenge(last);
  CREATE INDEX indice_name using BTree on challenge(name);
  CREATE INDEX indice_ages using HASH on challenge(age);
- CREATE INDEX index_ccnumber using BTree on challenge(ccnumber);
+ CREATE INDEX indice_ccnumber using BTree on challenge(ccnumber);
+ CREATE INDEX indice_yn using HASH on challenge(yn);
  
 DROP VIEW if exists seq_trgr;
 DROP VIEW if exists seq_name;
