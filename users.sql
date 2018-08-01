@@ -9,7 +9,6 @@ CREATE USER 'cliente_lect_scr'@'localhost' IDENTIFIED BY 'cliente_lect_scr';
 
  
 GRANT SELECT  ON challenge.challenge TO 'cliente_lectura'@'localhost';
-GRANT EXECUTE ON PROCEDURE challenge.calculus TO 'cliente_lectura'@'localhost';
 
 GRANT SELECT  ON challenge.challenge TO 'cliente_lect_scr'@'localhost';
 GRANT INSERT  ON challenge.challenge TO 'cliente_lect_scr'@'localhost';
@@ -20,7 +19,6 @@ CREATE USER 'cliente_lect_scr'@'%' IDENTIFIED BY 'cliente_lect_scr';
 
  
 GRANT SELECT  ON challenge.challenge TO 'cliente_lectura'@'%';
-GRANT EXECUTE ON PROCEDURE challenge.calculus TO 'cliente_lectura'@'%';
 
 
 GRANT SELECT  ON challenge.challenge TO 'cliente_lect_scr'@'%';

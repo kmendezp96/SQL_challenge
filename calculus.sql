@@ -7,7 +7,7 @@ CREATE PROCEDURE `calculus`()
 begin 
 
 declare half_rows int default 0;
-set half_rows = (select count(*) from challenge)/2;
+set half_rows = (select max(seq) from challenge)/2;
 
 
 
@@ -17,3 +17,5 @@ SELECT ccnumber FROM challenge GROUP BY ccnumber ORDER BY COUNT( * ) DESC LIMIT 
 select ccnumber from challenge  order by ccnumber asc limit half_rows,1;
 
 end
+	//
+DELIMITER ;

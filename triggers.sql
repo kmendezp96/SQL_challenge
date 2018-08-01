@@ -21,7 +21,6 @@ CREATE TRIGGER trigger_challenge BEFORE UPDATE ON challenge
 	$$
 DELIMITER ;
 
-
+ select seq, trgr from challenge where seq = 40; 
  update challenge set trgr = 7 where seq = 40;
  select seq, trgr from challenge where seq = 40; 
-

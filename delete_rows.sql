@@ -1,3 +1,3 @@
-SELECT COUNT(*) FROM challenge.challenge;
+SELECT quantity FROM challenge.quantity;
 DELETE FROM challenge.challenge WHERE seq > 900000;
-SELECT COUNT(*) FROM challenge.challenge;
+SELECT quantity FROM challenge.quantity;

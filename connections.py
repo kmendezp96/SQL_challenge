@@ -23,4 +23,4 @@ for i in range(num_connections):
     cnx.close()
 time = (time.time() - start_time) / 60
 print ("Finished in %s minutes " % time)
-print ("Average time per connection " + str(time/num_connections))
+print ("Average time per connection %s seconds" % str(time*60/num_connections))
